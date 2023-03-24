@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page d'authentification</title>
+    <link href="{{ url_for('static', filename='bootstrap/css/login.css') }}" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Connectez-vous</h1>
+    {% if error %}
+      <p style="color:red">{{ error }}</p>
+    {% endif %}
+    <form method="post">
+      <label for="email">Utilisateur :</label>
+      <input type="text" id="email" name="email" ><br><br>
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <input type="submit" value="Se connecter">
+    </form>
+  </body>
+</html>

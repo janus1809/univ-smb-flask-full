@@ -1,0 +1,56 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style du formulaire */
+  form {
+    background-color: #e2e2e2;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style du titre */
+  h1 {
+    text-align: center;
+  }
+  
+  /* Style des étiquettes */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style des champs d'entrée */
+  input[type=text],
+  input[type=password] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Style du bouton */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style du bouton au survol */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
