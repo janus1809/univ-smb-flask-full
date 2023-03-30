@@ -1,20 +1,24 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Page d'authentification</title>
-    <link href="{{ url_for('static', filename='bootstrap/css/login.css') }}" rel="stylesheet" />
-  </head>
-  <body>
-    <h1>Connectez-vous</h1>
-    {% if error %}
-      <p style="color:red">{{ error }}</p>
-    {% endif %}
-    <form method="post">
-      <label for="email">Utilisateur :</label>
-      <input type="text" id="email" name="email" ><br><br>
-      <label for="password">Mot de passe :</label>
-      <input type="password" id="password" name="password" required><br><br>
-      <input type="submit" value="Se connecter">
-    </form>
-  </body>
-</html>
+{% extends "layout.html" %}
+{% block title %}Accueil{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap/css/login.css') }}">
+</head>
+<body>
+	<div class="container">
+		<h2>Login</h2>
+		<form action="/login" method="get">
+			<label for="username"><b>Utilisateur</b></label>
+			<input type="text" placeholder="Enter Username" name="user" required>
+
+			<label for="password"><b>Mot de passe</b></label>
+			<input type="password" placeholder="Enter Password" name="passwd" required>
+
+			<button type="submit">Connexion</button>
+		</form>
+    </div>
+  </div>
+</div>
+{% endblock %}
